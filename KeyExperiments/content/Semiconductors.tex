@@ -1,0 +1,48 @@
+\chapter{Semiconductor Detectors}\label{Semiconductors}
+
+The earliest studies of semiconductor detectors date back to 1833 when Faraday discovered the temperature dependence of the conductivity of silver sulphide.
+Nearly a hundred years later, Wilson described a band theory of solids in 1931, in which quantum mechanics explains the characteristics of semiconductors.
+The electrical conductivity can be described by the valence band (VB) which consists of positively charged quasiparticles that are called holes $h^+$ and the conduction band (CB) which is filled with electrons \cite{KolanoskiWermes}.
+The band theory of solids distinguishes three types of conductive solids.
+Insulators with a band gap of $E_G\approx \SI{9}{\eV}$, semiconductors with $E_G\approx \SI{1}{\eV}$ and conductors with no gap.
+The properties of semiconductors can be changed by inserting impurities into the crystal structure.
+If an atom with five electrons, called a donor, is inserted into an element with four electrons, an excessive conduction electron appears.
+If an atom with three electrons, called an acceptor, is inserted into an element with three electrons, an excessive hole appears.
+Semiconductors doped with donors are called n-doped while those doped with acceptors are called p-doped.
+When both types of doped semiconductors are combined they form a diode.
+Drifting and combining of $e^-/h^+$ forms an electrical field at the junction of the semiconductor which is called the depletion zone.
+If an external positive voltage at the p side relative to the n side is applied, this electrical field is weakened and current can flow which is called forward bias.
+In reverse bias, the electrical field is strengthened and the depletion zone increases. 
+This configuration is used in detectors to measure ionizing particles.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.69\textwidth]{figs/MOS.png}
+    \caption{Schematic illustration of a MOSFET and a CMOS semiconductor \cite{KolanoskiWermes}.}
+    \label{fig:MOStransition}
+\end{figure}
+The most used semiconductor detectors are complementary metal-oxide-semiconductors (CMOS) consisting of a part with a p-doped substrate and an n-doped drain terminal (NMOS) and a part with the reverse (PMOS).
+Figure \ref{fig:MOStransition} shows a CMOS and a widely in field-effect transistor used semiconductor (MOSFET).
+
+The simplest design of detectors is a pn area diode consisting of a $\SI{300}{\micro\meter}$ thick p and n-doped area.
+An additional guard ring can reduce the electrical noise.
+Dividing the area into strips or pixels ($\text{length}<\SI{100}{\micro\meter}$) yields one or even two spatial coordinates but increases the readout difficulty.
+There are two different types to read out the information from the collection diodes.
+Hybrid pixel sensors have the readout electronics on a different chip which is a laborious assembly and resides in a large material thickness, the sensor, however, can be separately optimized to the readout components.
+Monolithic pixel sensors reduce their material by an entire order of magnitude but not all production lines are suited to produce such sensors.
+As pixel detectors are used to reconstruct traces for example in the ATLAS Experiment due to their good resolution with an uncertainty of $\sigma_x=\sfrac{\text{pitch}}{\sqrt{12}}$ \cite{Tom}, they are placed closest to the collision vertex where a lot of charged particles pass through them causing damage to the detector substrate.
+Such radiation damage can cause a change in effective doping concentration leading to deactivated donor or acceptor atoms.
+They can furthermore cause trapping where $e^-/h^+$ are trapped in defects of the crystal structure and are released later.
+These defects can form energy levels that excite $e^-/h^+$ easier and cause a flow in current.
+Radiation damage can be reduced by cooling \cite{Tom}.
+\begin{wrapfigure}{l}{7.5cm}
+    \centering
+    \includegraphics[width=0.5\textwidth]{figs/MightyPix.png}
+    \caption{Schematic illustration of a MightyPix \cite{MightyPix}.}
+    \label{fig:MightyPix}
+\end{wrapfigure}
+A track is reconstructed by forming groups of measurement points, called tracklets which require a good spatial and time resolution of the pixel detectors.
+In each of the tracklets every possible combination is built but only those that point to the interacting point are accepted, forming a track when a series of tracklets match.
+An application of pixel detectors is given in the example of MightyPix, a design sketch of possible pixel detectors used in the second upgrade of the LHC that is shown in figure \ref{fig:MightyPix}.
+Their requirements for the upgrade include a time resolution of $<\SI{3}{\nano\second}$, and a pixel size of $~\SI{50}{\micro\meter}\times\SI{150}{\micro\meter}$.
+Semiconductor detectors in the form of pixel detectors provide good time and space resolution which is why particle detectors are indispensable without them.
+However, the implementation of pixel detectors brings new challenges like the power distribution or the cooling. %of the detectors.
