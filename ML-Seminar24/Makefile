@@ -1,4 +1,4 @@
-all: build/thesis.pdf
+all: build/ML-thesis.pdf
 
 
 TeXOptions = -lualatex \
@@ -6,8 +6,8 @@ TeXOptions = -lualatex \
 			 -halt-on-error \
 			 -output-directory=build
                                                                                 
-build/thesis.pdf: FORCE | build
-	latexmk $(TeXOptions) thesis.tex
+build/ML-thesis.pdf: FORCE | build
+	latexmk $(TeXOptions) ML-thesis.tex
 	
 FORCE:
 

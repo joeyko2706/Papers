@@ -78,7 +78,7 @@
 \newcommand\secondcorrector[1]{\renewcommand\thesecondcorrector{#1}}
 
 % set title page elements
-\subject{Arbeit zur Erlangung des akademischen Grades\\ \thethesisclass}
+% \subject{Arbeit zur Erlangung des akademischen Grades\\ \thethesisclass}
 \publishers{\thechair \\ \thedivision \\ Technische Universität Dortmund}
 
 % page for the correctors
