@@ -1,9 +1,24 @@
 \chapter{Alternative Methods}
 \label{cha:alternative_methods}
 
-$\vdots$
+
 
 \section{Comparison to the CNN}
 \label{sec:comparison}
 
-$\vdots$
+\begin{table}[H]
+    \centering
+    \caption{Comparison of the alternative methods to the initial and the final CNN.}
+    \label{tab:comparisonTable}
+    \begin{tabular}{c | c c c c c c c}
+        \toprule
+        model & recall & accuracy & precision & f1-score & $R^2$-score & Mean Squared Error \\%& Mean Absolute Error \\
+        \midrule
+        SVM & 0.9617 & 0.9801 & 0.9939 & 0.9775 & 0.9195 & 0.0199 \\
+        LR & 0.9617 & 0.9788 & 0.9909 & 0.9760 & 0.9141 & 0.02124 \\
+        kNN & 0.9469 & 0.9761 & 1.0 & 0.97273 & 0.9034 & 0.0239 \\
+        CNN & 0.8726 & 0.9229 & 0.9864 & 0.926 & 0.688 & 0.0771 \\
+        best model & 0.9519 & 0.9694 & 0.9925 & 0.9718 & 0.8763 \\ 
+        \bottomrule
+    \end{tabular}
+\end{table}
