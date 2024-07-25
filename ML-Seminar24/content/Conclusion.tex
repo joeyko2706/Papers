@@ -1,5 +1,23 @@
 \chapter{Conclusion}
 \label{cha:conclusion}
 
+In this project, we explored the application of Convolutional Neural Networks (CNNs) for the classification of brain tumors into malignant and benign categories.
+The dataset used in this work is the "Brain Tumor" dataset from Kaggle \cite{jakesh_bohaju_2020}.
+The CNN that was originally implemented in this work had issues with overfitting, which was addressed by using adding a dropout layer and increasing the learning rate.
+To further improve the model, a hyperparameter optimization was performed using a grid search.
+The grid search resulted in a model with 24 convolutional filters in the first layer, 4 dense units, and a dropout rate of 0.6.
+The metric used to evaluate the models was the recall score, as it is important to detect malignant tumors correctly and avoid false negatives, which in this case would mean that a malignant tumor is classified as benign.
+The final model achieved a recall of 95.19\%. \newline %, an accuracy of 96.94\%, a precision of 99.25\%, an F1-score of 97.18\%, an $R^2$-score of 87.63\%, and a mean squared error of 0.0306.
 
-$\vdots$
+To put the results into perspective, the CNN was compared to alternative methods, such as the Support Vector Machine (SVM), the Logistic Regression (LR), and the k-Nearest Neighbors (kNN) algorithm.
+These models had no hyperparameter optimization and used the default hyperparameters by the scikit-learn library \cite{scikit-learn}.
+The models used the first- and second-order features extracted from the MRI images as input, which had shown great distinguishing power between benign and malignant brain tumors.
+The SVM and the LR outperformed the CNN with a recall of 96.17\%, while the kNN had a recall of 94.69\% and thus performed slightly worse than the CNN.
+
+In conclusion, the CNN model achieved good results in classifying brain tumors into malignant and benign categories.
+The alternative methods have proven to show an excellent performance because of the well-suited features extracted from the MRI images.
+A dataset with more images could further improve the performance of the CNN model.
+It can be further improved by extensive hyperparameter optimization or by introducing regularization techniques to suppress overfitting even more.
+The hyperparameter optimization that was performed in this work was limited to a few parameters and could be extended to include more parameters, but has shown great effect in reducing overfitting and increasing performance already.
+
+
