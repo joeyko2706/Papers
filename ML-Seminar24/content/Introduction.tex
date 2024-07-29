@@ -1,33 +1,40 @@
 \chapter{Introduction}
 \label{cha:introduction}
 
-To detect brain tumours and classify them into malignant and benign, is a vital challenge in the field of medical diagnostics. 
-Accurate and timely diagnosis is essential for effective treatment planning and improving the patient's health.
+Detecting brain tumours and classifying them into malignant and benign is a vital challenge in the field of medical diagnostics. 
+An accurate and timely diagnosis is essential for effective treatment planning and improving the patient's health.
 Traditional methods for diagnosing brain tumours are biopsies or manually evaluating medical images like magnetic resonance imaging (MRI) scans \cite{CancerResearUK}.
 These methods are time-consuming, expensive, and can be error-prone. 
 With advancements in the field of machine learning, it is possible to automate the process of diagnosing brain tumours using machine learning techniques. %convolutional neural networks (CNNs).
-To use machine learning, the brain tumour which is to be classified as malignant or benign, needs to be analysed by a doctor into certain features.
-These features can be extracted from MRI scans and used as input for a machine-learning model.
+To use these techniques, the brain tumour which is to be classified as malignant or benign, needs to be analysed by a doctor.
+Features can be extracted from MRI scans and used as input for a machine-learning model.
 To overcome this analysis step, a neural network can be trained on the MRI scans themselves.
 A task such as this is known as image classification.
-Convolutional neural networks (CNNs) are a type of artificial neural network that is well-suited for image classification tasks, by applying filters to input images to detect patterns.
+Convolutional neural networks (CNNs) are a type of neural network that is well-suited for image classification tasks, by applying filters to the input images and detect patterns in them.
 
 A CNN to classify brain tumours in MRI scans as malignant or benign is developed in this work.
 This model is compared to binary classification models to evaluate its performance, such as logistic regression, support vector machines, and k-nearest neighbours.
-The metric used to evaluate the models is the recall score, as it is important to detect malignant tumours correctly.
+The metric used to evaluate the models is the recall score. %, as it is important to detect malignant tumours correctly.
+It is employed as a measure of the number of correctly classified malignant tumours to the total number of brain tumours.
 
-The dataset used in this work is the "Brain Tumor" dataset from Kaggle \cite{jakesh_bohaju_2020}.
-It contains 3762 images with labels that can be used for the CNN.
-It also contains five first-order and eight second-order features that can be used for the binary classification methods and described later.
+The dataset used in this work is the "Brain Tumor" dataset from Kaggle \cite{jakesh_bohaju_2020}, containing 3762 images with labels. % that can be used for the CNN.
+It also contains five first-order and eight second-order features that can be used for the binary classification methods.
 % The first-order features are mean, variance, skewness, kurtosis, and entropy.
 % The second-order features are contrast, energy, angular second moment (ASM), entropy, homogeneity, dissimilarity, correlation, and coarseness.
 The dataset runs under the Creative Commons license, which allows for sharing and adapting the dataset for non-commercial purposes \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{(CC BY-NC-SA 4.0)}. 
 % The CNN is trained on the images from the dataset, and the binary classification models are trained on the features extracted from the images.
 
-The CNN is explained in more detail in chapter \ref{cha:CNN}, where the network architecture, the initial model, the hyperparameter optimization, and the final model are discussed.
-The binary classification models are explained in chapter \ref{cha:alternative_methods} and a comparison between the CNN and the binary classification models is made in section \ref{sec:comparison}.
-% A comparison between the CNN and the binary classification models is made in section \ref{sec:comparison}.
-A discussion and an outlook are given in chapter \ref{cha:conclusion}. 
+% The CNN is explained in more detail in chapter \ref{cha:CNN}, where the network architecture, the initial model, the hyperparameter optimization, and the final model are discussed.
+% The binary classification models are explained in chapter \ref{cha:alternative_methods} and a comparison between the CNN and the binary classification models is made in section \ref{sec:comparison}.
+% % A comparison between the CNN and the binary classification models is made in section \ref{sec:comparison}.
+% A discussion and an outlook are given in chapter \ref{cha:conclusion}. 
+
+\noindent
+The CNN is explained in more detail in chapter \ref{cha:CNN}.
+The binary classification models are discussed in chapter \ref{cha:alternative_methods}.
+Finally, a comparison between the CNN and the binary classification models is made in section \ref{sec:comparison}.
+A discussion and an outlook are given in chapter \ref{cha:conclusion}.
+
 The code can be found in the corresponding GitHub repository \cite{project} or directly via the \href{https://github.com/joeyko2706/MachineLearning24/tree/main}{link}.
 
 % \section{Dataset}

@@ -3,7 +3,8 @@
 
 In this project, we explored the application of Convolutional Neural Networks (CNNs) for the classification of brain tumors into malignant and benign categories.
 The dataset used in this work is the "Brain Tumor" dataset from Kaggle \cite{jakesh_bohaju_2020}.
-The CNN that was originally implemented in this work had issues with overfitting, which was addressed by using adding a dropout layer and increasing the learning rate.
+The CNN that was originally implemented in this work had issues with overfitting, which was addressed by adding a dropout layer and increasing the learning rate.
+This did only a little to reduce the overfitting.
 To further improve the model, a hyperparameter optimization was performed using a grid search.
 The grid search resulted in a model with 24 convolutional filters in the first layer, 4 dense units, and a dropout rate of 0.6.
 The metric used to evaluate the models was the recall score, as it is important to detect malignant tumors correctly and avoid false negatives, which in this case would mean that a malignant tumor is classified as benign.
@@ -17,7 +18,9 @@ The SVM and the LR outperformed the CNN with a recall of 96.17\%, while the kNN 
 In conclusion, the CNN model achieved good results in classifying brain tumors into malignant and benign categories.
 The alternative methods have proven to show an excellent performance because of the well-suited features extracted from the MRI images.
 A dataset with more images could further improve the performance of the CNN model.
-It can be further improved by extensive hyperparameter optimization or by introducing regularization techniques to suppress overfitting even more.
-The hyperparameter optimization that was performed in this work was limited to a few parameters and could be extended to include more parameters, but has shown great effect in reducing overfitting and increasing performance already.
-
-
+% It can be further improved by extensive hyperparameter optimization or by introducing regularization techniques to suppress overfitting even more.
+% The hyperparameter optimization that was performed in this work was limited to a few parameters and could be extended to include more parameters, but has shown great effect in reducing overfitting and increasing performance already.
+It can be further improved by introducing regularizers to suppress overfitting even more.
+More hyperparameter optimization could also be performed by extending the range of the parameters or adding more, for example, the learning rate.
+The CNN could also be improved by changing the architecture to try and make the network learn the features that the alternative methods use.
+In that case, it could potentially outperform the alternative methods.

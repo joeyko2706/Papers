@@ -7,7 +7,7 @@ The models are not optimized in this work and the default hyperparameters are us
 They use the first- and second-order features as input.
 First-order features are mean, variance, skewness, kurtosis, and entropy.
 Second-order features are contrast, energy, angular second moment (ASM), entropy, homogeneity, dissimilarity, correlation, and coarseness.
-The features are extracted from the MRI images and are used as input for the binary classification models.
+The features are extracted from the MRI images. %and are used as input for the binary classification models.
 To explore the data, the features are visualized in a comparison between benign and malignant brain tumours in Figure \ref{fig:benign_malignant_comparison}.
 \begin{figure}[H]
     \centering
@@ -16,7 +16,11 @@ To explore the data, the features are visualized in a comparison between benign 
     \label{fig:benign_malignant_comparison}
 \end{figure}
 It can be seen that the entropy, the energy, the ASM and the homogeneity are the most promising features to distinguish between benign and malignant brain tumours.
-From this comparison, it can be concluded that the features are well suited for the classification task and that the models should be able to distinguish between benign and malignant brain tumours very well.
+Other features such as the dissimilarity show not a high difference between the two classes.
+With the difference in the first three features being so distinctive, however, it can be concluded that they are well suited for the classification task.
+The alternative algorithms should be able to distinguish between benign and malignant brain tumours very well, based on these features.
+This behaviour can also be seen in the correlation between the features that are calculated and discussed in section \ref{sec:DataExploration}.
+% From this comparison, it can be concluded that the features are well suited for the classification task and that the models should be able to distinguish between benign and malignant brain tumours very well.
 
 Before the models are built, the data is split into a training and a test set with a ratio of 80:20 and scaled using the standard scaler from scikit-learn.
 The models calculate a fit on the training data and predict the labels on the test data.
@@ -30,7 +34,7 @@ All of the alternative methods produce very good results and they outperform the
 The SVM and the LR have the best recall of 96.17\%, which is slightly better than the final CNN with a recall of 95.19\%.
 Both of the models outperform every other model on the other metrics as well, except for the precision of the kNN, which is 100\%.
 The final CNN, however, can outperform the kNN in the recall and its precision is even better than the LR.
-
+The metrics show that the alternative methods are very well suited for the classification task and can outperform the CNNs.
 \begin{table}[H]
     \centering
     \caption{Comparison of the alternative methods to the initial and the final CNN, sorted by the recall.}
