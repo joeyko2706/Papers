@@ -9,7 +9,7 @@ No further preprocessing is applied to the data.
 Malignant tumours are labelled as positive, while benign tumours are labelled as negative.
 Therefore, a false negative prediction is a malignant tumour classified as benign, while a false positive prediction is a benign tumour classified as malignant.
 The goal is to classify the tumours with a bias towards the malignant tumours, as it is much more dangerous for a patient to have a malignant tumour classified as benign than vice versa.
-Recall is used as the main metric to evaluate the models to reflect this.
+Recall is used as the main metric to evaluate the models to reflect this, as false negatives are more dangerous than false positives, possibly leading to a patient not receiving the necessary treatment.
 % It is the ratio of the true positive benign tumours to the sum of the true positive benign tumours and the false negative malignant tumours.
 During the training, however, the model is optimized using the accuracy.
 % The recall is defined as the ratio of the true positive predictions to the sum of the true positive and false negative predictions.
@@ -83,7 +83,7 @@ These metrics can be improved by running the model for more epochs, but the prob
 \section{Hyperparameter Optimization}
 \label{sec:hyperparameter}
 
-To be able to know which of the hyperparameters lead to overfitting and which increase the performance the most, a grid search over a parameter space was performed by iterating over the number of filters in the convolutional layers, the dropout rate, and the number of dense layers.
+To be able to know which of the hyperparameters lead to overfitting and which increase the performance the most, a grid search \cite{gridsearch} over a parameter space was performed by iterating over the number of filters in the convolutional layers, the dropout rate, and the number of dense layers.
 The network architecture was kept the same as in the initial model, but the hyperparameters were varied. 
 A preceding grid search was performed before the following one which led to the range of hyperparameters tested.
 The preceding grid search is explained in section \ref{sec:FirstGridsearchHyperparameterTests}.

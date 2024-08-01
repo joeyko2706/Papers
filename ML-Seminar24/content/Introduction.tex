@@ -14,14 +14,15 @@ Convolutional neural networks (CNNs) are a type of neural network that is well-s
 
 A CNN to classify brain tumours in MRI scans as malignant or benign is developed in this work.
 This model is compared to binary classification models to evaluate its performance, such as logistic regression, support vector machines, and k-nearest neighbours.
-The metric used to evaluate the models is the recall score. %, as it is important to detect malignant tumours correctly.
-It is employed as a measure of the number of correctly classified malignant tumours to the total number of brain tumours.
+The metric used to train the models is the accuracy score, as it is important to detect malignant tumours correctly.
+% The metric used to evaluate the models is the recall score. %, as it is important to detect malignant tumours correctly.
+% It is employed as a measure of the number of correctly classified malignant tumours to the total number of brain tumours.
 
 The dataset used in this work is the "Brain Tumor" dataset from Kaggle \cite{jakesh_bohaju_2020}, containing 3762 images with labels. % that can be used for the CNN.
 It also contains five first-order and eight second-order features that can be used for the binary classification methods.
 % The first-order features are mean, variance, skewness, kurtosis, and entropy.
 % The second-order features are contrast, energy, angular second moment (ASM), entropy, homogeneity, dissimilarity, correlation, and coarseness.
-The dataset runs under the Creative Commons license, which allows for sharing and adapting the dataset for non-commercial purposes \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{(CC BY-NC-SA 4.0)}. 
+The dataset runs under the Creative Commons license, which allows for sharing and adapting the dataset for non-commercial purposes (CC BY-NC-SA 4.0) \cite{license}. %\href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{(CC BY-NC-SA 4.0)} 
 % The CNN is trained on the images from the dataset, and the binary classification models are trained on the features extracted from the images.
 
 % The CNN is explained in more detail in chapter \ref{cha:CNN}, where the network architecture, the initial model, the hyperparameter optimization, and the final model are discussed.
