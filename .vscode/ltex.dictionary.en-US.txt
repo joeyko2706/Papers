@@ -1,0 +1,4 @@
+LRDs
+AGNs
+luminosities
+bolometric
