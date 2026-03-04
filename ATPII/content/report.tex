@@ -1,6 +1,4 @@
-\chapter{Chapter 1}\label{cha:cha1}
-
-
+% \chapter{Chapter 1}\label{cha:cha1}
 Due to its unprecedented sensitivity in the infrared (IR) bans, the James Webb Space Telescope (JWST) has detected several dozens active galactic nuclei (AGNs) at high redshift $(z\sim3-11)$ with much lower bolometric luminosities than studied in previous studies of high redshift quasars with luminosities of $L_{\text{AGN}}\sim 10^{42}-10^{45}\ \text{erg s}^{-1}$~\cite{10.1093/mnras/staf359}.
 Such objects are called `little red dots' (LRDs).
 An important property of them is their X-ray weakness as they have been undetected at the limits of the deepest Chandra fields, with only very few exceptions, regardless of the optical classification and even when stacking signals from multiple sources in standard observed-frame energy intervals (soft, hard, and full bands).
@@ -10,3 +8,34 @@ The last hypothesis can be ruled out as very unlikely since the same X-ray weakn
 Furthermore, LRDs have broad $\text H\alpha$ emission lines, which has been proposed as misidentification, as other objects can produce similar emission lines, including strong outflows driven by star formations or supernovae.
 Even though this hypothesis agrees with MIRI observations~\cite{Pérez-González_2024}, NIRSpec observations have shown characteristics of LRDs that are hard to explain with this scenario~\cite{10.1093/mnras/staf359, Yue_2024}. 
 Future studies into the emission lines for large LRD samples will give more information about the contribution of outflows. \newline
+The following scenarios adopt two different type of AGNs.
+Type 1 AGN has a a broad emission line, primarily consisting of $\text H_\alpha$ and $\text H_\beta$, while narrow-line LRDs are identified as type 2 AGNs.
+
+\noindent
+The heavy-absorption scenario is based on gas column densities within the Compton-thick\footnote{Compton-thick refers to the effect that Compton-scattering dampens the X-Ray spectrum in high density gas-clouds.} regime that absorbs the measurable X-ray spectra, hence the nondetection.
+Observing the $\text H_\alpha$ and $\text H_\beta$ emission lines in absorption spectra requires extremely large gas densities, typical of the broad line region (BLR) with hydrogen column densities of $N_{\text H}=\SI{2e24}{\per\centi\meter\squared}$ and a covering factor approaching $4\pi$\cite{refId0}.
+To achieve such a large covering factor, these clouds are suggested to house low metallicities which implies low dust content and therefore reduces the radiation pressure feedback of the AGN\@.
+As a result, dust-poor gas accumulates around the nuclear region\cite{10.1093/mnras/staf1439}.
+This would also explain the reduced equivalent widths of $\text{Fe}_{II}$ and $\text H_\beta$ lines found in LRDs\cite{10.1093/mnras/staf1439}.
+A recent study by Comasastri et al. (2026)~\cite{refId0} has found type 2 AGN with a significant detection of $\sim3\sigma$ and a total exposure time of $\SI{210}{\mega\second}$\footnote{The exposure time was not taken from a single LRD, but from multiple sources that were stacked together.} in the ultra-hard band (UHB) of the X-ray spectrum ($10-30\ \text{keV}$), but not in lower energy bands.
+This supports the hypothesis of heavy-absorption as only highly-energetic X-ray photons can pass through the Compton-thick absorber, while lower energetic photons remain undetected.
+The same procedure for LRDs of type 1 has not revealed any evidence of a significant signal in about $\SI{140}{\mega\second}$ stacked data, suggesting that they are additionally intrinsic X-ray weak.
+Other studies have ruled out heavy-absorption as the only compatible solution at high levels of obscuration with column densities of $N_{\text H} = 10^{24.5-25}\ \si{\per\centi\meter\squared}$\cite{Sacchi_2025} that are only possible when the obscuration occurs in the same clouds responsible for the broad-line emission~\cite{10.1093/mnras/staf359}.
+The only objects found with such high column densities of $\gtrsim10^{24}$ are broad absorption line (BAL) quasars, but LRDs do not show any strong BAL-features, arguing against the heavy-absorption theory~\cite{Yue_2024}.
+
+\noindent
+The intrinsically weak X-ray emission theory is based on highly accreting black holes (BH) that leads to lower temperatures close to the BH and a weak jet with lower spin, resulting in a softer X-ray spectrum.
+Super-Eddington accretion rates are leading to stronger winds, that produce a broader BLR\@.
+Chandra may only be able to detect AGNs at minimal angles from the jet, as the detection rate of a super massive black hole (SMBH) within $\SI{10}{\degree} (\sim1.5\%)$ is similar to detecting X-rays by LRDs $(\sim0.6\%)$~\cite{Pacucci_2024}.
+Furthermore, narrow-line Seyfert 1 (NLSy1) galaxies indicate to have high accretion rates close to the Eddington limit, or even super-Eddington, and show steeper X-ray spectra than normal AGN~\cite{10.1093/mnras/staf359}.
+This supports the theory by Comasastri et al. (2026)~\cite{refId0}, although the similarity with NLSy1 cannot account for the entire X-ray weakness.
+A new study by Sacchi et al. (2025)~\cite{Sacchi_2025}, however, found no detection despite a high exposure time of $\SI{400}{\mega\second}$.
+The calculated upper limits are deep enough to rule out current super-Eddington accretion models of Pacucci et al.~\cite{Pacucci_2024} and Inayoshi et al.~\cite{inayoshi2025weaknessxraysvariabilityhighredshift}, stating that the X-ray weakness is only explainable with heavy-obscuration. \newline
+A heavy limitation for the studies of the X-ray weakness of LRDs is that only few photons have been detected and that only studies based on stacked data are available.
+In a stacked dataset, some LRDs could be intrinsically weak, while others may be heavily obscured.
+This leads to the current consensus that a combination of both leading hypotheses will most likely be true. 
+Heavy-obscuration will definitely be a part of it, as evidence has already been found in type 2 AGNs $\sim3\sigma$ relevance~\cite{refId0}.
+Intrinsic X-ray weakness via super-Eddington accretion will never be the sole solution, because the upper-limit calculated by Sacchi et al.~\cite{Sacchi_2025} may rule out current theories.
+It remains unclear into which framework the type 1 AGNs will fit.\newline
+A decisive future observation would be the detection of type 1 AGNs in the UHB, likely ruling out super-Eddington accretion and confirm the heavy-obscuration scenario.
+This detection might be published with data taken from next-generation observatories like the AXIS satellite hosting detectors with a bandpass of $0.3-10\ \si{\kilo\eV}$ and a spatial resolution of $\sim\SI{1.5}{\arcsecond}$ across the entire field of view~\cite{Reynolds_2023}.
